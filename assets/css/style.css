@@ -65,7 +65,7 @@ nav {
     background-color: #ffffff;
     width: 110%;
     left: 0;
-    padding: 0 1 rem;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
@@ -76,7 +76,7 @@ nav {
 #nav-toogle:checked~nav {
     display: block;
 }
-nav-toggle {
+#nav-toggle {
     display: none;
 
 }
