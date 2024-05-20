@@ -17,6 +17,12 @@ body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -25,6 +31,9 @@ body {
 #menu > li {
     margin-bottom: 1em;
 
+}
+.nav-toggle-label {
+    display: none;
 }
 .active {
     border-bottom: 1px solid #3a3a3a;
@@ -46,12 +55,8 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
+
 /* Main Content */
 main {
     background-color: lightblue;
@@ -89,6 +94,22 @@ nav {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+/* Final rgba sets the opacity so it is semi-transparent */
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+
+}
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -116,14 +137,14 @@ nav {
         width:fit-content;
         padding-right: 1rem;
     }
-    #menu {
+ 
+       #menu {
         display: flex;
     }
     #menu > li {
         padding-left: 1rem;
     }
-    .nav-toggle-label {
-        display: none;
+
     }
     #logo {
         font-size: 280%;
@@ -132,14 +153,19 @@ nav {
     }
     /* Main content */
     main {
-        /* Push content down to accommodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+    /* Hero image*/
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
-        border-bottom: 1px solid #3a3a3a
+        border-bottom: 1px solid #3a3a3a;
     }
 }
