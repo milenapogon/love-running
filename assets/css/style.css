@@ -39,9 +39,24 @@ h1, h2, h3 {
 #benefits p {
     padding: 0 20px;
 }
-#hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
+    margin: 5px 0; 
+}
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefit-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #menu {
     font-size: 110%;
@@ -85,7 +100,7 @@ main {
     margin-top: 47px;
 }
 
-/* Navbar styles with dropdown toogle */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
